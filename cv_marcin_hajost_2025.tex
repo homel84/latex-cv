@@ -1,0 +1,322 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+\usepackage{lmodern} % Improved font support
+\usepackage{graphicx}
+\usepackage{wrapfig}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+% If your name is very short, use just one of the lines below
+% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Marcin}}}}} % First name
+
+\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Hajost}}}}} % Last name
+
+\vspace{6pt}
+
+{\huge Experienced Database Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+\icon{MapMarker}{12}{Wrocław, Poland }\\
+\icon{Phone}{12}{+48 790 31 03 84}\\
+\icon{At}{12}{\href{mailto:mhajost@gmail.com}{mhajost@gmail.com}}\\
+\icon{BirthdayCake}{12}{31.03.1984}\\
+\end{minipage}
+\begin{minipage}[t][4cm][b]{0.275\textwidth}
+\includegraphics[scale=0.088]{marcin1}
+\end{minipage}
+
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+% INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+\vspace{-\baselineskip} % Required for vertically aligning minipages
+I'm an experienced Database Engieer with a strong technical background gained by providing a wide range of duties in Swiss leading-edge telecom and financial companies.\\
+I'm a fast learner, enthusiastic about taking up new tasks and challenges. Open to support customers with always full commitment. Seeking to leverage solid technical skills and abilities to advance my career.\\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+\vspace{-\baselineskip} % Required for vertically aligning minipages
+\begin{barchart}{5.5}
+\baritem{Oracle}{100}
+\baritem{PL/SQL}{90}
+\baritem{Python}{80}
+\baritem{Bash}{80}
+\baritem{Ansible}{70}
+\baritem{Azure}{40}
+\baritem{PostgreSQL}{20}
+\end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+
+\entry
+{06.2023 -- now}
+{Database Engieer}
+{UBS, Wrocław, Poland}
+{-- Building new Oracle on Azure VM platform mainly in security are with Entra ID integration [ATO, SPPS, CREDS and EVA]\\
+-- Developing Security Model for Oracle on Azure VM platform based on Azure Function App and Service Bus in GitLab CI/CD\\
+-- Maintaining and developing multiple solutions for DBaaS platform\\
+\texttt{Azure}\slashsep\texttt{Entra ID}\slashsep\texttt{Python}\slashsep\texttt{Bash}}
+\entry
+{07.2022 -- 06.2023}
+{Oracle Security SRE}
+{UBS, Wrocław, Poland}
+{-- Expertise in Oracle Database Security (mainly DBaaS but also Legacy CMDA platform with Kerberos authentication), including Enterprise User Security (EUS) [LDAP and certificate based authentication]\\
+-- Ensuring compliance and safeguarding databases [DBAM, Database Audit with Splunk]\\
+-- Proven ability to design, implement, and maintain robust automations for infrastructure and customers [various scripts written in Bash and Python]\\
+-- Taking part in multiple remediations, projects and initiatives [AC5, SHA2 migration, OID to OUD migration, CMDB move and decommission]\\
+\texttt{Oracle}\slashsep\texttt{LDAP}\slashsep\texttt{Cryptography/TLS}\slashsep\texttt{Python}\slashsep\texttt{Bash}}
+\entry
+{01.2019 -- 07.2022}
+{Oracle Database Engineer}
+{Swisscom, Zurich, Switzerland}
+{-- Designing and implementing new solutions, enhancements and improvements as part of RFD/ADR process\\
+-- Extensive troubleshooting and performance tuning in the area of Oracle Database, mainly on Exadata and ODA\\
+-- Being responsible for data replications with Oracle Golden Gate [Oracle-Oracle and Oracle-Teradata configurations]\\
+-- Developing automation and maintaining existing automation with Ansible\\
+-- Cross-platform logical and physical migrations for most demanding and complex databases\\
+-- Deploying and configuring Exadata and ODA [Linux setup, git integration, gpg password store, HW monitoring]\\
+-- Patching Exadata and ODA [Infrastructure and databases]\\
+-- Administrating OEM 13c [Monitoring Templates, Incident Rules, Metrics definitions and ME\$'s, target deployment, monitoring plugin for OGG, user management]\\
+-- Upgrading Oracle Databases from 11g, 12c, 18c to 19c [planning, preparation, execution, troubleshooting]\\
+-- Supporting a vast number of applications and customers \\
+-- Providing Oncall support\\
+\texttt{Exadata}\slashsep\texttt{Oracle}\slashsep\texttt{Golden Gate}\slashsep\texttt{Ansible}\slashsep\texttt{Python}}
+\entry
+{09.2018 -- 01.2019}
+{Senior Oracle DBA}
+{Swisslinx for Deutsche Bank, Zurich, Switzerland}
+{-- Providing operational support for applications and customers\\
+-- Developing and implementing automation for Oracle Database provisioning\\
+-- Periodic patching of Oracle Databases\\
+\texttt{Oracle}\slashsep\texttt{bash}\slashsep\texttt{PL/SQL}}
+\entry
+{07.2014 -- 09.2018}
+{Oracle Onsite Coordinator}
+{IBM for SwissRe, Adliswil, Switzerland}
+{-- Technically leading and managing a ten-person external Oracle DBA Team [located in Wroclaw, Poland] at customer premises\\
+-- Developing and implementing engineered projects and solutions as well as supporting and closely working with local Engineering Team\\
+-- Driving important customer projects like migration to Exadata, backup migration from TSM to CommVault, Data Center redundancy tests, OUD patching, OEM patching\\
+-- Contributing significantly as Operation Team Lead in projects like Exadata patching, database Upgrade to 12c, OEM upgrade to 13c\\
+-- Technically supporting major internal Business Customers\\
+-- Developing and supporting home-developed customer applications, scripts and wrappers\\
+-- Enhancing and driving automation initiatives and projects\\
+-- Enhancing OEM monitoring and reducing ticket waste\\
+-- Working closely with Oracle Support and ACS on a vast number of issues\\
+-- Troubleshooting mainly for difficult escalated problems\\
+-- Performing regular restores, implementing recovery procedures and conducting regular system backups\\
+-- Providing technical consultancy for main infrastructure and application hubs\\
+-- Coaching and mentoring junior staff\\
+-- Responsible for documentation and automated reporting\\
+\texttt{Exadata}\slashsep\texttt{Oracle}\slashsep\texttt{bash}\slashsep\texttt{PL/SQL}\slashsep\texttt{}}
+\entry
+{04.2012 -- 07.2014}
+{Oracle DBA}
+{IBM for SwissRe, Wrocław, Poland}
+{-- Member of 24/7 support team\\
+-- Supporting over 100 Oracle Databases [versions 10g, 11g], different database types [FullRAC, RACOne, Single Instance, Standby, Veritas Cluster], hosted on Linux [SUSE], UNIX [Solaris] and Exadata\\
+-- Installing and creating databases and configuring according to projects needs [parameters, security, storage, HA solutions], database decommissioning, proactively patching and upgrading databases, backup [scheduling backup jobs from OEM, with support of RMAN catalog to TSM], recovery [creating clone databases for restoring corrupted data and testing proposes - using RMAN], performing database change requests\\
+-- Database administration and monitoring using OEM 11g, 12c\\
+-- Performing data loads and refreshes using data pump\\
+-- Diagnosing and troubleshooting database problems such as errors, bugs, performance problems, runaway processes, connectivity problems, poor SQL statements, etc.\\
+-- Member of IBM SSO Academy as a trainer and creator of Oracle education path as well as introducing younger team colleagues in Oracle world [mentoring]
+\\\texttt{Linux}\slashsep\texttt{Oracle}\slashsep\texttt{bash}\slashsep\texttt{SQL}}
+\entry
+{06.2011 -- 04.2012}
+{Computer Operator / Junior IT Specialist}
+{IBM for SwissRe, Wrocław, Poland}
+{-- Maintaining 2000+ Windows and UNIX servers [physical and virtual]\\
+-- Hardware monitoring, solving common issues, supporting second-level teams [Linux, Windows, Oracle, Middleware, Power Center]\\
+-- Supporting on-site teams on hardware repair\\
+-- Coordinating major infrastructure changes
+\\\texttt{Windows}\slashsep\texttt{Linux}\slashsep\texttt{Hardware}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+\entry
+{2002 -- 2007}
+{Master of Science in theoretical Physics}
+{University of Zielona Góra}
+{Faculty: Physics, Major: Computer Physics}
+\entry
+{1999 -- 2002}
+{High School Absolvent}
+{Maria Skłodowska - Curie High School in Andrychów}
+{Faculty: Physics and Math}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL QUALIFICATIONS
+%----------------------------------------------------------------------------------------
+
+\cvsect{Professional Qualifications}
+
+\cvsect{Certificates}
+
+\begin{entrylist}
+\entry
+{09.2018}
+{Oracle Database 12c Administrator Certified Professional [OCP]}
+{\href{https://www.youracclaim.com/badges/ba7cbe3e-73e2-46e3-a9f5-50f360b351a5/public_ur}{[link]}}
+{}
+\entry
+{02.2017}
+{Oracle Database 11g Administrator Certified Professional [OCP]}
+{\href{https://www.youracclaim.com/badges/e76c1f40-7c78-4983-acff-19f94d426dba/public_url}{[link]}}
+{}
+\entry
+{02.2017}
+{Oracle Certified Expert, Oracle Real Application Clusters 11g and Grid Infrastructure Administrator}
+{\href{https://www.youracclaim.com/badges/13055f20-b99d-44e2-80c2-d848c0093eee/public_url}{[link]}}
+{}
+\entry
+{03.2014}
+{Novell Certified Linux Administrator 11 [CLA]}
+{}
+{}
+\entry
+{10.2013}
+{Oracle Database 11g Administrator Certified Associate [OCA]}
+{\href{https://www.youracclaim.com/badges/90d42c9f-7e40-4c0d-acba-1853333084d6/public_url}{[link]}}
+{}
+\entry
+{06.2013}
+{{Oracle Database SQL Certified Expert}}
+{\href{https://www.youracclaim.com/badges/e12fc3ab-e66a-4ca2-9c43-6450c1132437/public_url}{[link]}}
+{}
+\entry
+{03.2013}
+{Oracle Certified Professional, Java SE 6 Programmer}
+{\href{https://www.youracclaim.com/badges/b4a3d22e-7de5-4f65-aa1e-1a6d5353a0e7/public_url}[link]}
+{}
+\end{entrylist}
+
+\cvsect{Trainings \& Workshops}
+
+\begin{entrylist}
+\entry
+{all the time}
+{- Vast number of Conferences \& Workshops like POUG, DOAG, SOUG, AIOUG, ITOUG Trivadis Perf Days, ACES @home, ... }
+{}
+{}
+\entry
+{2021}
+{- Oracle Database: Deploy, Patch and Upgrade Workshop Ed 1}
+{}
+{}
+\entry
+{2020}
+{- Oracle Database Backup and Recovery Workshop Ed 1}
+{}
+{}
+\entry
+{2019}
+{- Oracle Golden Gate Training from Trivadis\\
+- Oracle Database 18c New Features for Administrators Ed 1\\
+- Oracle Database Appliance Release 12.1 Overview}
+{}
+{}
+\entry
+{2018}
+{- Codeacademy Python PRO course}
+{}
+{}
+\entry
+{2017}
+{- Oracle Database 12c: Backup and Recovery Workshop\\
+- Oracle Database 12c: Performance Management and Tuning\\
+- Certification Exam Prep Seminar: Oracle Database 10g /11g Administration II}
+{}
+{}
+\entry
+{2016}
+{- Exadata Database Machine Administration Workshop\\
+- Oracle Database 12c: ASM Administration\\
+- Oracle Database 11g: Administration Workshop II}
+{}
+{}
+\entry
+{2012 - 2013}
+{- Novell Certified Linux Professional [CLP]\\
+- Oracle Database 11g: Administration Workshop I}
+{}
+{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+\cvsect{Languages}
+
+\textbf{English} - fluent\\
+\textbf{German} - rudimentary\\
+\textbf{Polish} - native
+\end{minipage}
+\hfill
+
+%----------------------------------------------------------------------------------------
+% Parafka do polskiego CV
+%----------------------------------------------------------------------------------------
+
+\vfill
+\tiny{I hereby declare that all the facts and information provided for this CV are true. I allow my personal data stated in the above mentioned applications to be processed for the purpose of recruitment, in accordance with the Personal Data Protection Act dated 29.08.1997 (Journal of Laws No.133, item 883}\\
+\centerline{powered by \LaTeX}
+
+\end{document}
